@@ -8,9 +8,78 @@ body {
 	--toggle-radius: 0px;
 	--toggle-thumb-radius: 0px;
 	--slider-thumb-radius: 0px;
+
+	/* editor */
+	--font-text-theme: Teachers, Outfit, sans-serif;
+	--font-monospace-theme: JetBrains Mono, Roboto Mono, Ubuntu Mono, serif;
+	/* --bold-color: var(--color-accent);
+	--italic-color: var(--color-accent); */
+	--font-weight: 900;
+
+	/* HEADERS */
+	/* headers weight */
+	--h1-weight: 900;
+	--h2-weight: 900;
+	--h3-weight: 900;
+	--h4-weight: 900;
+	--h5-weight: 900;
+	--h6-weight: 900;
+	/* headers size */
+	--h1-size: 2.5rem;
+	--h2-size: 2rem;
+	--h3-size: 1.6rem;
+	--h4-size: 1.3rem;
+	--h5-size: 1.1rem;
+	--h6-size: 1rem;
+	/* headers font */
+	--h1-font: Outfit, Satoshi;
+	--h2-font: Outfit, Satoshi;
+	--h3-font: Outfit, Satoshi;
+	--h4-font: Outfit, Satoshi;
+	--h5-font: Outfit, Satoshi;
+	--h6-font: Outfit, Satoshi;
+	/* headers colors */
+	--h1-color: var(--color-accent);
+
+	/* UI COMPONENTES */
+	/* buttons */
+	--button-radius: 20px;
+	/* checkboxes */
+	--checkbox-radius: 10px;
+	--checkbox-color-hover: var(--color-base-00);
+	--font-interface-theme: JetBrains-Mono;
+	--text-accent: var(--color-base-100);
 }
 
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+.theme-dark {
+	/* Colors for dark mode */
+	--color-lime: #cdf34e;
+	/* Colors base modified */
+	--color-base-30: #0c0e0e;
+	/* Color accent */
+	--color-accent: var(--color-lime);
+
+	/* Backgrounds */
+	--background-primary: #151616;
+	--background-secondary: #151616;
+	--background-modifier-border: #252525;
+
+	/* UI COMPONENTES */
+	/* checkboxes */
+	--checkbox-color-hover: var(--color-base-70);
+	--checklist-done-color: var(--color-base-40);
+	/* Accents */
+	--text-on-accent: var(--color-base-00);
+}
+
+.theme-light {
+	--background-primary: #ece4ff;
+	--background-secondary: #d9c9ff;
+	--color-accent: #2375f3;
+}
+
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
 	display: none;
 }
 
@@ -31,4 +100,14 @@ svg * {
 
 .menu-separator {
 	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+/* Change text editor font size */
+div.cm-line:not(.HyperMD-header):not(.HyperMD-header-1):not(
+		.HyperMD-header-2
+	):not(.HyperMD-header-3):not(.HyperMD-header-4):not(.HyperMD-header-5):not(
+		.HyperMD-header-6
+	) {
+	font-size: 1.2rem;
+	line-height: 1.35;
 }
