@@ -15,6 +15,14 @@ body {
 	/* --bold-color: var(--color-accent);
 	--italic-color: var(--color-accent); */
 	--font-weight: 900;
+	/* indentation guides */
+	--indentation-guide-width-active: 2px;
+	--indentation-guide-color-active: var(--color-accent);
+	/* modal */
+	--modal-radius: 20px;
+	/* multiselect */
+	--pill-radius: 10px;
+	--pill-background: red;
 
 	/* HEADERS */
 	/* headers weight */
@@ -49,6 +57,15 @@ body {
 	--checkbox-color-hover: var(--color-base-00);
 	--font-interface-theme: JetBrains-Mono;
 	--text-accent: var(--color-base-100);
+	/* Slider */
+	--slider-thumb-radius: 10px;
+	--slider-track-height: 2px;
+	/* tabs */
+	--tab-radius: 15px;
+	--tab-radius-active: 15px;
+	--tab-outline-width: 0;
+	/* input */
+	--input-radius: 15px;
 }
 
 .theme-dark {
@@ -70,6 +87,14 @@ body {
 	--checklist-done-color: var(--color-base-40);
 	/* Accents */
 	--text-on-accent: var(--color-base-00);
+	/* navigation */
+	--nav-item-color-active: var(--color-accent);
+	/* prompt */
+	--prompt-border-color: var(--background-primary);
+	/* Slider */
+	--slider-track-background: var(--color-accent);
+	/* tabs */
+	--tab-background-active: var(--color-base-10);
 }
 
 .theme-light {
